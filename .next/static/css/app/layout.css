@@ -611,9 +611,6 @@ video {
 .h-full {
   height: 100%;
 }
-.max-h-\[92vh\] {
-  max-height: 92vh;
-}
 .w-\[40vw\] {
   width: 40vw;
 }
