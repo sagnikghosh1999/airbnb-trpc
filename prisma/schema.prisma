@@ -18,7 +18,7 @@ model User {
   image          String?
   hashedPassword String?
   createdAt      DateTime  @default(now())
-  updated        DateTime  @updatedAt
+  updatedAt      DateTime  @updatedAt
   favouriteIds   String[]  @db.ObjectId
 
   accounts     Account[]
@@ -31,7 +31,7 @@ model Account {
   userId            String  @db.ObjectId
   type              String
   provider          String
-  ProviderAccountId String
+  providerAccountId String
   refresh_token     String? @db.String
   access_token      String? @db.String
   expires_at        Int?
@@ -42,7 +42,7 @@ model Account {
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  @@unique([provider, ProviderAccountId])
+  @@unique([provider, providerAccountId])
 }
 
 model Listing {
