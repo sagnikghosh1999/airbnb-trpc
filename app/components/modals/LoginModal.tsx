@@ -19,9 +19,16 @@ import { useRouter } from "next/navigation";
 
 const LoginModal = () => {
   const router = useRouter();
-  const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
+
+  const registerModal = useRegisterModal();
+
   const [isLoading, setIsLoading] = useState(false);
+
+  const toggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
 
   const {
     register,
@@ -93,12 +100,12 @@ const LoginModal = () => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
-          <div className="">Already have an account?</div>
+          <div className="">First time using Airbnb?</div>
           <div
             className="text-neutral-800 cursor-pointer  hover:underline"
-            onClick={registerModal.onClose}
+            onClick={toggle}
           >
-            Log in
+            Create an account
           </div>
         </div>
       </div>
