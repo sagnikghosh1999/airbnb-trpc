@@ -54,7 +54,7 @@ Full Stack Airbnb Clone with Next.js 14 Tailwind-css, Prisma, MongoDB, NextAuth,
 
 - Listings, Listing card component, filtering ,Favourite functionality
 <div align="center">
-<a href="https://nextbnb-three.vercel.app/"><img  src='/screenshots/ss1.png' alt='image'/></a>
+<a href="https://nextbnb-three.vercel.app/"><img  src='public/screenshots/ss1.png' alt='image'/></a>
 </div>
 
 <div align="center">
