@@ -1,6 +1,7 @@
 "use client";
 import Select from "react-select";
 import useCountries from "@/app/hooks/useCountries";
+import Flag from "react-world-flags";
 
 export type CountrySelectValue = {
   flag: string;
@@ -28,10 +29,8 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
         onChange={(value) => onChange(value as CountrySelectValue)}
         formatOptionLabel={(option: any) => (
           <div className="flex flex-row items-center gap-3">
-            <div className="h-4 w-6">
-              <img src={option.flag} />
-            </div>
-            <div className="">
+            <Flag code={option.value} className="w-5" />
+            <div>
               {option.label},
               <span className="text-neutral-500 ml-1">{option.region}</span>
             </div>

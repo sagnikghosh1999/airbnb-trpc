@@ -61,7 +61,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
   }, [reservation]);
   return (
     <div
-      className="col-span-1 cursor-pointer group"
+      className="col-span-1 cursor-pointer group shadow p-1 rounded-xl"
       onClick={() => router.push(`/listings/${data.id}`)}
     >
       <div className="flex flex-col gap-1 w-full">
@@ -76,13 +76,13 @@ const ListingCard: React.FC<ListingCardProps> = ({
             <HeartButton listingId={data.id} currentUser={currentUser} />
           </div>
         </div>
-        <div className="font-semibold text-lg ">
+        <div className="font-semibold text-lg px-2">
           {location?.region},{location?.label}
         </div>
-        <div className="font-light text-neutral-500 text-lg ">
+        <div className="font-light text-neutral-500 text-lg px-2">
           {reservationDate || data.category}
         </div>
-        <div className="flex flex-row items-center gap-1">
+        <div className="flex flex-row items-center gap-1 px-2">
           <div className="font-semibold">₹{price.toLocaleString()}</div>
           {!reservation && <div className="font-light ">night</div>}
         </div>
