@@ -79,14 +79,12 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <div className="font-semibold leading-5">
           {location?.region},{location?.label}
         </div>
-        <div className="font-medium text-neutral-500 text-[15px] leading-5">
+        <div className="font-medium text-neutral-500 text-[15px] leading-4">
           {reservationDate || data.category}
         </div>
-        <div className="flex flex-row text-sm items-center gap-1 mb-1">
+        <div className="flex flex-row text-sm items-center mb-1 gap-1">
           <div className="font-semibold">₹{price.toLocaleString()}</div>
-          {!reservation && (
-            <div className="font-light underline cursor-pointer">night</div>
-          )}
+          {!reservation && <div className="font-light "> night</div>}
         </div>
         {onAction && actionLabel && (
           <Button
