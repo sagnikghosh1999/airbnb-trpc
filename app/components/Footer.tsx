@@ -60,7 +60,7 @@ const SITE_MAP = [
 const Footer = () => {
   return (
     <footer className="bg-gray-100 border-t border-gray-200">
-      <div className="container max-w-7xl mx-auto">
+      <div className=" max-w-full px-4 sm:px-6 md:px-10 xl:px-[72.5px] xl:max-w-[1760px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-4">
           {SITE_MAP.map(({ title, sitemap }, index) => (
             <div
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between py-5 text-sm text-gray-400 border-t border-gray-200 lg:py-6 lg:flex-row">
           <div className="flex flex-col items-center order-last lg:flex-row lg:order-none">
             <span className="mr-0 text-center lg:mr-4">
-              © 2021 Airbnb, Inc.
+              © 2024 Airbnb, Inc.
             </span>
             <span className="mb-2 mr-0 lg:mr-8 lg:mb-0">
               | Clone by{" "}
