@@ -154,9 +154,9 @@ To run this project, you will need to add the following environment variables to
 
 `GOOGLE_CLIENT_SECRET`
 
-`GOOGLE_CLIENT_ID`
+`GITHUB_CLIENT_ID`
 
-`GOOGLE_CLIENT_SECRET`
+`GITHUB_CLIENT_SECRET`
 
 `NEXTAUTH_SECRET`
 
