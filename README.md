@@ -307,7 +307,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## :handshake: Contact
 
-Sashen - [@linkedin_handle](https://www.linkedin.com/in/sagnikghosh99) - sagnikghosh813@gmail.com
+Sagnik - [@linkedin_handle](https://www.linkedin.com/in/sagnikghosh99) - sagnikghosh813@gmail.com
 
 Project Link: [https://github.com/sagnikghosh1999/airbnb-trpc.git](https://github.com/sagnikghosh1999/airbnb-trpc.git)
 
